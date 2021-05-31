@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="principal-title">
+        <h1>Música 8D</h1>
+    </div>
+    <nav id="nav-bar__container">
+
+        <ul class="nav-bar">
+            <li class="nav-bar__item"><a href="./index.html">Inicio</a></li>
+            <li class="nav-bar__item"><a href="./index.html">Sobre Nosotros</a></li>
+            <li class="nav-bar__item"><a href="./index.html">Blog</a></li>
+            <li class="nav-bar__item"><a href="./index.html">Contacto</a></li>
+            <li class="nav-bar__item"><a href="./registro.html">Regístrate</a></li>
+        </ul>
+
+    </nav>
+
+    <nav class="burger-bar__mquery">
+        <button class="burger-bar__mquery--style" id="button-open-menu">
+        <i class="fas fa-bars"></i>
+    </button>
+        <div class="nav-bar__mquery--open">
+            <div class="close-menu">
+                <i class="fas fa-times "></i>
+            </div>
+            <ul id="nav-bar__mquery">
+                <li class="nav-bar__mquery-item"><a href="./index.html">Inicio</a></li>
+                <li class="nav-bar__mquery-item"><a href="./index.html">Sobre Nosotros</a></li>
+                <li class="nav-bar__mquery-item"><a href="./index.html">Blog</a></li>
+                <li class="nav-bar__mquery-item"><a href="./index.html">Contacto</a></li>
+                <li class="nav-bar__mquery-item"><a href="./index.html">Registrarse</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="principal-container__form">
+        <div class="img-form-continer">
+            <img src="./img/img-ondas.jpg" alt="">
+        </div>
+        <div class="singup-form">
+            <h2 class="title-description__form">Regístrate </h2>
+
+            <form>
+                <div class="login-user">
+                    <p>NOMBRE</p>
+                    <label>
+                        <input type="text" name="nombre" class="input-box">
+                    </label>
+                </div>
+                <div class="login-user">
+                    <p>APELLIDO</p>
+                    <label>
+                        <input type="text" name="apellido" class="input-box">
+                    </label>
+                </div>
+                <div class="login-user">
+                    <p>EMAIL</p>
+                    <label>
+                        <input type="email" name="email" class="input-box">
+                    </label>
+                </div>
+                <div class="login-user">
+                    <p>CONTRASEÑA</p>
+                    <label>
+                        <input type="password" name="contraseña" class="input-box">
+                    </label>
+                </div>
+                <input type="submit" name="enviar" placeholder="Enviar"> </form>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

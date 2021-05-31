@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Henry</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <script type="text/javascript" src="./DOMhomework.js" async></script>
+</head>
+
+<body class="body_light--mode body_dark--mode">
+
+    <header id="header" class="header--light">
+        <a href="https://www.soyhenry.com/" target="_blank_"><img class="logo" src="./assets/henry.png" /></a>
+        <h1 class="title">To-Do App</h1>
+        <div class="style-toggle">
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+        <span class="subtitle">DoM Homework</span>
+        
+
+    </header>
+
+    
+    <div><span  id="createdBy">Aplicación creada por:</span></div>
+    <div id="container">
+        <div id="inputContainer">
+            <input class="input-style" type="text" id="toDoInput" placeholder="Descripción To-Do..." />
+            <div id="addButton"><span>AGREGAR</span></div>
+        </div>
+        <div id="toDoContainer"></div>
+    </div>
+
+</body>
+
+</html>

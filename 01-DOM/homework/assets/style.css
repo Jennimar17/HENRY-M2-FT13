@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.body_light--mode {
+  background-color: rgb(232, 246, 255);
+  font-family: "Montserrat", sans-serif;
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body_dark--mode{
+  background-color: #25273C;
+}
+
+
+
+#header {
+  width: 100%;
+  height: 15rem;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  background-image: url(./img/mountains-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#container {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  width: 50%;
+  min-width: 700px;
+  border-radius: 5px;
+  z-index: 10;
+  margin-top: 250px;
+}
+
+#inputContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+#toDoInput {
+  outline: none;
+  width: 75%;
+  padding-left: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+#addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 35px;
+  font-size: 20px;
+  box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+  background: linear-gradient(to bottom, #79bbff 5%, #4C519F 100%);
+  background-color: #79bbff;
+  border-radius: 6px;
+  border: 1px solid #84bbf3;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
+}
+#addButton:hover {
+  background: linear-gradient(to bottom, #4C519F 5%, #79bbff 100%);
+  background-color: #4C519F;
+}
+#addButton:active {
+  position: relative;
+  top: 1px;
+}
+
+#toDoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.toDoShell {
+  width: 650px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.toDoShell span {
+  width: 90%;
+}
+.completeText {
+  color: lightgrey;
+  text-decoration: line-through;
+}
+
+.completeCheckbox {
+  transform: scale(1.8);
+}
+
+.title {
+  color: #fff;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: 100px;
+  position: absolute;
+}
+
+.subtitle {
+  position: absolute;
+  right: 40px;
+  top: 80px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.style-toggle {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+}
+
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+.input-style {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 10px;
+  width: 35px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 15px;
+  width: 15px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+  font-size: 12px;
+}
+
+.fa-sun {
+  color: #f39c12;
+  font-size: 12px;
+}

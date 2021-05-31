@@ -1,0 +1,21 @@
+{
+  "name": "World-Wide-Whiteboard",
+  "version": "1.0.0",
+  "description": "socket.io",
+  "main": "index.js",
+  "author": "Henry",
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "express": "^4.12.3",
+    "socket.io": "^1.7.2",
+    "node-fetch": "^2.6.1",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  }
+}

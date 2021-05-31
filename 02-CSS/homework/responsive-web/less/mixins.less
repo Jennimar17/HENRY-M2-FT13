@@ -1,0 +1,14 @@
+// Mixins acá
+
+.flex(@flow, @wrap, @justify){
+    display: flex;
+    flex-flow: @flow @wrap;
+    justify-content: @justify;
+}
+
+.button-style(@size, @bg-color, @padding, @font-color){
+    font-size: @size;
+    background-color: @bg-color;
+    padding: @padding;
+    color: @font-color;
+}
